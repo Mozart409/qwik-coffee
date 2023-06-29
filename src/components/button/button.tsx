@@ -1,9 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 
 export interface ButtonProps {
-  title: string
+  title: string;
 }
 
 export const Button = component$<ButtonProps>((props) => {
-  return <div><button>{props.title}</button></div>;
+  return (
+    <div>
+      <button>
+        <span>Title: {props.title}</span>
+      </button>
+    </div>
+  );
 });
