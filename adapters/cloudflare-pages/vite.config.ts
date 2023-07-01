@@ -10,6 +10,7 @@ export default extendConfig(baseConfig, () => {
         input: ["src/entry.cloudflare-pages.tsx", "@qwik-city-plan"],
       },
     },
+    optimizeDeps: { include: ['@auth/core'] },
     plugins: [cloudflarePagesAdapter()],
   };
 });

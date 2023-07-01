@@ -3,12 +3,14 @@ import { Button } from "~/components/button/button";
 import { Title } from "~/components/title/title";
 
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Session } from "~/components/session/session";
 
 export default component$(() => {
   return (
     <div>
       <Title title="New route works." />
-      <Button title="Testing is fun" />
+      <Button>Testing is fun</Button>
+      <Session />
     </div>
   );
 });
