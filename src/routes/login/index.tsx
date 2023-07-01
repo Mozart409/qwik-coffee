@@ -7,11 +7,6 @@ export default component$(() => {
   return (
     <Form action={signIn}>
       <input type="hidden" name="providerId" value="github" />
-      <input
-        type="hidden"
-        name="options.callbackUrl"
-        value="https://qwik.consumption.coffee/api/auth/signin/github"
-      />
       <Button>Sign In</Button>
     </Form>
   )
