@@ -10,7 +10,7 @@ export default component$(() => {
       <input
         type="hidden"
         name="options.callbackUrl"
-        value="/api/auth/signin/github"
+        value="https://qwik.consumption.coffee/api/auth/signin/github"
       />
       <Button>Sign In</Button>
     </Form>
